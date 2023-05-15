@@ -35,7 +35,7 @@ bool esPrimo(int numero){ //funcion que devuelve true o false y que evalua un nu
     cout << "Ingrese un numero: "; //Salida de datos para ingresar un numero
     cin >> numero; //El usuario introduce un numero por pantalla
 
-    int* puntero = &numero; //Asignamos una direccion de memoria a la variable puntero
+    int* puntero = new int(numero); //Asignamos una direccion de memoria a la variable puntero
     bool primo = esPrimo(*puntero); //Comprobamos si el numero almacenado en la variable puntero es primo o no mediante una llamada
 
     if (primo) { //Si el valor de primo es true
@@ -45,7 +45,7 @@ bool esPrimo(int numero){ //funcion que devuelve true o false y que evalua un nu
     }
 
     cout << "La posicion de memoria donde se guarda el numero es: " << puntero << endl; //La direccion de memoria donde se almacena el numero....
-
+    delete puntero;
     return 0; //Programa principal retorna valor 0
 
 
