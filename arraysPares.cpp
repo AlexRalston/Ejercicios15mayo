@@ -1,3 +1,7 @@
+/*Ejercicio 3: Rellenar un array de 10 números, 
+posteriormente utilizando punteros indicar cuales son números pares y su posición en memoria.*/
+
+
 #include<iostream>
 
 

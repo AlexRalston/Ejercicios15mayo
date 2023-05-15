@@ -1,3 +1,9 @@
+/*Ejercicio 2: Determinar si un número es primo o no;
+ con puteros y además indicar en que posición de memoria se guardo el número.
+ */
+
+
+
 #include<iostream>
 
 
