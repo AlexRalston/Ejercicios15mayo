@@ -32,7 +32,7 @@ int main() {
 
     int numVocales = contarVocales(cadena);
 
-    cout << "El número de vocales en la cadena es: " << numVocales << endl;
+    cout << "El numero de vocales en la cadena es: " << numVocales << endl;
 
     return 0;
 }

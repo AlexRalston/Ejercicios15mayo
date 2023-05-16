@@ -12,7 +12,7 @@ using namespace std;
 int* crearArreglo(int n) {
     int* arreglo = new int[n]; // Crear un arreglo dinámico
 
-    cout << "Ingrese los números:\n";
+    cout << "Ingrese los numeros:\n";
     for (int i = 0; i < n; i++) {
         cin >> arreglo[i]; // Almacenar los números en el arreglo
     }
@@ -32,21 +32,21 @@ bool buscarNumero(int* arreglo, int n, int numero) {
 
 int main() {
     int n;
-    cout << "Ingrese la cantidad de números: ";
+    cout << "Ingrese la cantidad de numeros: ";
     cin >> n;
 
     int* arreglo = crearArreglo(n); // Crear el arreglo y almacenar los números
 
     int numero;
-    cout << "Ingrese el número a buscar: ";
+    cout << "Ingrese el numero a buscar: ";
     cin >> numero;
 
     bool encontrado = buscarNumero(arreglo, n, numero); // Buscar el número en el arreglo
 
     if (encontrado) {
-        cout << "El número " << numero << " fue encontrado en el arreglo.\n";
+        cout << "El numero " << numero << " fue encontrado en el arreglo.\n";
     } else {
-        cout << "El número " << numero << " no fue encontrado en el arreglo.\n";
+        cout << "El numero " << numero << " no fue encontrado en el arreglo.\n";
     }
 
     delete[] arreglo; // Liberar la memoria del arreglo dinámico

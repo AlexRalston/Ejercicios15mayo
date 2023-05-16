@@ -38,7 +38,7 @@ int main() {
 
     int numVocales = contarVocales(nombre);
 
-    cout << "El número de vocales en su nombre es: " << numVocales << endl;
+    cout << "El numero de vocales en su nombre es: " << numVocales << endl;
 
     return 0;
 }
