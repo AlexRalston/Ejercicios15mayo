@@ -9,25 +9,26 @@ using  namespace std;
 
 
 
-int* crearArreglo(int n) {
-    int* arreglo = new int[n]; // Crear un arreglo dinámico
+int* crearVector(int n) {
+    int* vector = new int[n]; // Crear un vector dinámico
 
     cout << "Ingrese los numeros:\n";
     for (int i = 0; i < n; i++) {
-        cin >> arreglo[i]; // Almacenar los números en el arreglo
+        cout<<"Introduzca el valor correspondiente a la posicion"<<"["<<i+1<<"]:";
+        cin >> vector[i]; // Almacenar los números en el vector
     }
 
-    return arreglo;
+    return vector;
 }
 
-bool buscarNumero(int* arreglo, int n, int numero) {
+bool buscarNumero(int* vector, int n, int numero) {
     for (int i = 0; i < n; i++) {
-        if (arreglo[i] == numero) {
-            return true; // El número fue encontrado en el arreglo
+        if (vector[i] == numero) {
+            return true; // El número fue encontrado en el vector
         }
     }
     
-    return false; // El número no fue encontrado en el arreglo
+    return false; // El número no fue encontrado en el vector
 }
 
 int main() {
@@ -35,21 +36,21 @@ int main() {
     cout << "Ingrese la cantidad de numeros: ";
     cin >> n;
 
-    int* arreglo = crearArreglo(n); // Crear el arreglo y almacenar los números
+    int* vector = crearVector(n); // Crear el vector y almacenar los números
 
     int numero;
     cout << "Ingrese el numero a buscar: ";
     cin >> numero;
 
-    bool encontrado = buscarNumero(arreglo, n, numero); // Buscar el número en el arreglo
+    bool encontrado = buscarNumero(vector, n, numero); // Buscar el número en el vector
 
     if (encontrado) {
-        cout << "El numero " << numero << " fue encontrado en el arreglo.\n";
+        cout << "El numero " << numero << " fue encontrado en el vector.\n";
     } else {
-        cout << "El numero " << numero << " no fue encontrado en el arreglo.\n";
+        cout << "El numero " << numero << " no fue encontrado en el vector.\n";
     }
 
-    delete[] arreglo; // Liberar la memoria del arreglo dinámico
+    delete[] vector; // Liberar la memoria del vector dinámico
 
     return 0;
 }

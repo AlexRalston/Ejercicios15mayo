@@ -1,42 +1,52 @@
-/*Ejercicio4:Rellenar un arreglo con n númneros, posteriormente utilizando punteros
-, posteriormente utilizando punteros determinar el menor elemento del vector.*/
+/*Ejercicio 4: Rellenar un arreglo con n números, 
+posteriormente utilizando punteros determinar el menor elemento del vector.*/
+
+
+
+
 
 #include <iostream>
 
-
 using namespace std;
 
-
-
 int main() {
-
     int n;
 
-    cout  << "Ingrese el tamaño del arreglo: "; //Salida de datos preguntando por el tamaño del array.
-    cin >> n; //Datos entrantes del usuario.
+    cout << "Ingrese la longitud del vector: ";
+    cin >> n;
 
-    int arreglo[n];//Declaracion arreglo de tamaño variable. 
-    int* puntero = arreglo; // Inicializar el puntero al arreglo.
+    int vector[n];
+    int* puntero = vector;
 
-    cout << "Ingrese los " << n << " números del arreglo:\n";
+    cout << "Ingrese los " << n << " numeros del vector:\n";
     for (int i = 0; i < n; i++) {
-        cin >> *puntero; // Guardar el valor en la posición apuntada por el puntero.
-        puntero++; // Avanzar el puntero a la siguiente posición del arreglo.
+        cout << "Ingrese el valor correspondiente a la posicion [" << i << "]: ";
+        cin >> *puntero;
+        puntero++;
     }
 
-    puntero = arreglo; // Reiniciar el puntero al inicio del arreglo.
+    puntero = vector;
 
-    int menor = *puntero; // Inicializar el valor menor con el primer elemento del arreglo.
+    cout << "El vector ingresado es: ";
+    for (int i = 0; i < n; i++) {
+        cout << *puntero << " | ";
+        puntero++;
+    }
+    cout << endl;
+
+    puntero = vector;
+
+    int menor = *puntero;
 
     for (int i = 1; i < n; i++) {
-        puntero++; // Avanzar el puntero a la siguiente posición del arreglo.
+        puntero++;
 
         if (*puntero < menor) {
-            menor = *puntero; // Actualizar el valor menor si se encuentra un número menor.
+            menor = *puntero;
         }
     }
 
-    cout << "El menor elemento del arreglo es: " << menor << endl; //Salida de datos mostrando el menor elemento del arreglo.
+    cout << "El menor elemento del vector es: " << menor << endl;
 
     return 0;
 }

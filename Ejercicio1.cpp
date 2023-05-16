@@ -32,7 +32,7 @@
 
     comprobarParImpar(puntero); //Llamada a la funcion para comprobar si el numero es par o impar, es decir, cuando se ejecute, volverá a la linea de codigo 10.
 
-    cout<<"La posicion de memoria donde se guarda el numero es: "<<endl; //Devuelve la posicion de memoria donde se guarda el numero
+    cout<<"La posicion de memoria donde se guarda el numero es: "<<puntero<<endl; //Devuelve la posicion de memoria donde se guarda el numero
 
     delete puntero; //Libera la memoria anteriormente asignada.
  }
