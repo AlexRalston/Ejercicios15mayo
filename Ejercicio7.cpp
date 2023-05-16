@@ -6,7 +6,7 @@ devolver el número de vocales que hay. NOTA: Recuerda que debes utilizar punter
 
 
 
-using namespace std;
+using  namespace std;
 
 
 

@@ -5,7 +5,7 @@ posteriormente utilizando punteros indicar cuales son números pares y su posici
 #include<iostream>
 
 
-using namespace std;//Evitamos escribir std:: en la E/S de datos
+using namespace std; //Evitamos escribir std:: en la E/S de datos
 
 
 

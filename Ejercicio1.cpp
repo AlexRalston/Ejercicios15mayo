@@ -15,7 +15,7 @@
     }
     else{
 
-        cout<<"El numero es impar."<<endl; //En cualquier otro caso, no.
+        cout <<"El numero es impar."<<endl; //En cualquier otro caso, no.
     }
 
  }

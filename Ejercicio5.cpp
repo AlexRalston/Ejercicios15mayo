@@ -3,7 +3,7 @@ y mostrarlos en pantalla. NOTA: Utilizar cualquier método de ordenamiento.*/
 
 #include <iostream>
 
-using namespace std;
+using  namespace std;
 
 void ordenarArreglo(int* arreglo, int n) {
     for (int i = 0; i < n - 1; i++) {

@@ -4,7 +4,7 @@ NOTA: Puedes utilizar cualquier método de búsqueda(Secuencial o Binaria)*/
 #include <iostream>
 
 
-using namespace std;
+using  namespace std;
 
 
 

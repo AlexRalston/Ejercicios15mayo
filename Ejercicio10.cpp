@@ -4,7 +4,7 @@ Nota: La matriz traspuesta es aquella en la que la columna i era la fila i de la
 
 #include <iostream>
 
-using namespace std;
+using  namespace std;
 
 // Función para crear una matriz dinámica e ingresar elementos
 int** crearYIngresarMatriz(int filas, int columnas) {

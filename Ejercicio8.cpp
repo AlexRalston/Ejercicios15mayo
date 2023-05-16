@@ -4,7 +4,7 @@ e indicar cuantas veces aparece la vocal a,e,i,o,u; en la cadena de caracteres. 
 #include <iostream>
 
 
-using namespace std;
+using  namespace std;
 
 int contarVocales(const char* cadena) {
     int contador = 0;

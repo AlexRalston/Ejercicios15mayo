@@ -12,7 +12,7 @@ int main() {
 
     int n;
 
-    cout << "Ingrese el tamaño del arreglo: "; //Salida de datos preguntando por el tamaño del array.
+    cout  << "Ingrese el tamaño del arreglo: "; //Salida de datos preguntando por el tamaño del array.
     cin >> n; //Datos entrantes del usuario.
 
     int arreglo[n];//Declaracion arreglo de tamaño variable. 

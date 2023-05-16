@@ -2,7 +2,7 @@
 /*Ejercicio 9: Realice un programa que calcule la suma de dos matrices dinámicas.*/
 
 
-using namespace std;
+using  namespace std;
 // Función para crear una matriz dinámica e ingresar elementos
 int** crearYIngresarMatriz(int filas, int columnas) {
     int** matriz = new int*[filas];
